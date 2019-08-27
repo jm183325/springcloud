@@ -14,6 +14,6 @@ public class DictType {
 	private String isSql;
 	private Date createTime;
 	private String createBy;
-	private Date updateTime;
+	private LocalDateTime updateTime;
 	private Integer version;
 }

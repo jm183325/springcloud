@@ -6,7 +6,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.spring.pojo.DictType;
 import com.spring.service.DictTypeService;
-
+/**
+ * 
+ * @author jm
+ *
+ */
 @RequestMapping("/dept")
 @RestController
 public class DictTypeController {
