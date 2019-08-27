@@ -1,5 +1,7 @@
 package com.spring.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,5 +21,10 @@ public class DictTypeController {
 	@RequestMapping("/add")
 	public DictType addDept(@RequestParam("type")String type) {
 		return dictTypeService.dictTypeSelect(type);
+	}
+	
+	@RequestMapping("/select")
+	public List<DictType> dictTypeSelect() {
+		return dictTypeService.dictTypeSelectAll();
 	}
 }

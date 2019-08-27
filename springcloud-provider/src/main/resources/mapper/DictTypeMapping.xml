@@ -2,6 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.spring.dao.DictTypeDao">
 <select id="dictTypeSelect" resultType="com.spring.pojo.DictType">
-select * from dict_type where type=#{type}
+select * from dict_type 
+where
+type=#{type}
+
+</select>
+<select id="dictTypeSelectAll" resultType="com.spring.pojo.DictType">
+select * from dict_type 
+
+
 </select>
 </mapper>
