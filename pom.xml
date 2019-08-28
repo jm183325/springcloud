@@ -9,12 +9,13 @@
 		<module>springcloud-common</module>
 		<module>springcloud-provider</module>
 		<module>springcloud-consumer</module>
+		<module>springcloud-zuul</module>
 	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.1.RELEASE</version>
+		<version>1.5.11.RELEASE</version>
 	</parent>
 	<properties>
 		<thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>

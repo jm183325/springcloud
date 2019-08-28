@@ -1,0 +1,14 @@
+server:
+  port: 8063
+spring:
+  application:
+    name: springcloud-zuul
+zuul:
+  ignoredServices: '*'
+  routes:
+    springcloud-consumer: /ecom/**
+    
+     
+ 
+
+  

@@ -28,7 +28,9 @@ public class PersonController {
 	@RequestMapping("/get")
 	public void restTemplateGetTest(){
 		
-		String url="http://localhost:8083/dept/select";
+		//String url="http://localhost:8083/dept/select";
+		//String url="http://SPRINGCLOUD-PROVIDER/dept/select";
+		String url="http://springcloud-provider/dept/select";
 		List<DictType> dictType = (List<DictType>) restTemplate.getForObject(url, List.class);
         System.out.println(dictType);
         System.out.println("@##");
