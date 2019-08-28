@@ -1,6 +1,7 @@
 package com.spring.controller;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +28,8 @@ public class PersonController {
 	@RequestMapping("/get")
 	public void restTemplateGetTest(){
 		
-		String url="http://springcloud-provider/dept/select";
-		DictType dictType = restTemplate.getForObject(url, DictType.class);
+		String url="http://localhost:8083/dept/select";
+		List<DictType> dictType = (List<DictType>) restTemplate.getForObject(url, List.class);
         System.out.println(dictType);
         System.out.println("@##");
     }
